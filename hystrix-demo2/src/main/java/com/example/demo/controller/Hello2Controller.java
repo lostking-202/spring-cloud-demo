@@ -13,4 +13,8 @@ public class Hello2Controller {
     public String sayHello2(){
         return service.sayHello2();
     }
+    @RequestMapping("/hello3")
+    public String sayHello3(){
+        return service.sayHello3();
+    }
 }

@@ -14,4 +14,7 @@ public class Hello2Service {
     public String fallBack(){
         return "failure";
     }
+    public String sayHello3(){
+        return new RestTemplate().getForObject("http://localhost:8080/hello", String.class);
+    }
 }

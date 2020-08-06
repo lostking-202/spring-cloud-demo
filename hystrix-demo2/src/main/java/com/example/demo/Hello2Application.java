@@ -2,12 +2,13 @@ package com.example.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import zipkin.server.EnableZipkinServer;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.netflix.hystrix.EnableHystrix;
 
 @SpringBootApplication
-//@EnableHystrix
+@EnableHystrix
 //@EnableZipkinStreamServer
-@EnableZipkinServer
+/*@EnableEurekaClient*/
 public class Hello2Application {
 
 	public static void main(String[] args) {
