@@ -3,24 +3,14 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-dependencies -->
-		<groupId>org.springframework.cloud</groupId>
-		<artifactId>spring-cloud-starter-parent</artifactId>
-		<version>2024.0.1</version>
-		<relativePath/>
+		<groupId>com.example</groupId>
+		<artifactId>spring-cloud-demo</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>spring-cloud-demo</artifactId>
+	<artifactId>eureka-server-demo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>spring-cloud-demo</name>
-
-	<modules>
-		<module>eureka-client-demo1</module>
-		<module>eureka-client-demo2</module>
-		<module>sleuth-demo1</module>
-		<module>sleuth-demo2</module>
-		<module>eureka-server-demo</module>
-	</modules>
+	<description>Demo project for Spring Boot</description>
 
 	<dependencies>
 		<dependency>
@@ -30,11 +20,14 @@
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
 		</dependency>
 	</dependencies>
-
 
 	<build>
 		<plugins>
